@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<html>
+    <style>
+        
+        .search-bar {
+            width: 100%;
+            height: 64px;
+        }
+        .nav-bar {
+            border-bottom-style: solid;
+            border-bottom-width: .5px;
+            border-bottom-color: #ebebeb;
+            width: 100%;
+            height: 58px;
+        }
+        .position-left {
+            text-align: center;
+            text-decoration: none;
+            color: #777;
+            overflow: hidden;
+            display: inline-block;
+            padding: 25px 8px 15px 8px;
+            margin-left: 8px;
+            margin-right: 8px;
+            font-size: 13px;
+            font-family: 'Roboto', arial, sans-serif;
+        }
+        .active {
+            border-bottom: 3px solid #1A73E8;
+            color: #1A73E8;
+            font-weight: bold;
+            margin-left: 154px;
+            height: 15px;
+            line-height: 15px;
+            padding: 28px 16px 12px;
+        }
+        .google-image {
+            padding-bottom: 0px;
+            padding-left: 30px;
+            padding-right: 28px;
+            padding-top: 4px;
+            margin-top: 20px;
+            position: absolute;
+            top: 4px;
+        }
+        .search-input {
+            margin-top: 10px;
+            margin-left: 150px;
+            width: 642px;
+            height: 44px;
+            background-color: white;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+            border-top-style: solid;
+            border-top-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: rgb(223, 225, 229);
+            border-top-color: rgb(223, 225, 229);
+            border-left-color: rgb(223, 225, 229);
+            border-right-color: rgb(223, 225, 229);
+        }
+        .search-button {
+            border-color: rgb(66, 133, 244);
+            background-color: rgb(66, 133, 244);
+            color: white;
+            font-weight: bold;
+            border-radius: 2px;
+            border-style: solid;
+            border-width: 1px;
+            height: 30px;
+            width: 69px;
+            padding: 0px 12px 0px 12px;
+            float: right;
+            margin-top: 15px;
+            margin-right: 20px;
+        }
+    </style>
+
+    <body>
+        <div name="SearchBar" class="search-bar">
+            <!--Google Image-->
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" height="30" width="92" class="google-image">
+            <!--Search bar-->
+            <input type="search" class="search-input">
+            <!--Signin button-->
+            <button type="button" class="search-button">Sign in</button>
+        </div>
+
+        <div name="NavSection" class="nav-bar">
+            <!--Nav options-->
+            <a href="#" class="position-left active">All</a>
+            <a href="#" class="position-left">News</a>
+            <a href="#" class="position-left">Videos</a>
+            <a href="#" class="position-left">Maps</a>
+            <a href="#" class="position-left">Images</a>
+            <a href="#" class="position-left">More</a>
+            <a href="#" class="position-left" style="margin-left:75px">Settings</a>
+            <a href="#" class="position-left">Tools</a>
+        </div>
+    </body>
+</html>
